@@ -1,0 +1,152 @@
+main {
+    font-family: 'Poppins', sans-serif;
+    max-width: 80%;
+    margin: auto;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap img {
+    width: 150px;
+
+    animation: logo 2s ease-in-out 0s infinite;
+}
+
+@keyframes logo{
+    0% {
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+.wrap h1 {
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 700;
+
+    background: linear-gradient(90deg,#6850ff,#a750ff);
+    margin: 10px 15px;
+
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+}
+
+#dashboard-btn {
+    background: linear-gradient(90deg,#058cfb,#0026ff);
+}
+
+.main-btn img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+#gear {
+    transition: transform .25s ease-in-out;
+}
+
+.main-btn:hover #gear {
+    transform: rotate(90deg);
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards hr {
+    display: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    margin: 75px 0;
+}
+
+.card img {
+    width: 500px;
+    border-radius: 5px;
+    filter:drop-shadow(2px 2px 2px black);
+}
+
+.text p{
+    color: grey;
+    max-width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px){
+    .card{
+        flex-wrap: wrap;
+    }
+    .text{
+        margin-top: 20px;
+    }
+
+    .cards hr {
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(255,255,255,0.1);
+        margin: 75px 0;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .card img {
+        width: 300px;
+    }
+}

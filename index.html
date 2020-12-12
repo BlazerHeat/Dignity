@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <title>Dignity Bot</title>
+</head>
+
+<body>
+    <header>
+        <div class="burger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <div class="logo">
+            <img src="./src/img/logo.png" alt="">
+            <a href="#"><span style="color: orange;">D</span>IGNITY <span style="color: orange;">B</span>OT</a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-list"><a href="#" class="link active">Home</a></li>
+                <li class="nav-list"><a href="#" class="link">Commands</a></li>
+                <li class="nav-list"><a href="#" class="link">About</a></li>
+                <li class="nav-list"><a href="#" class="link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right-bar">
+            <a class="btn login-btn v-none" href="#">
+                <img src="./src/img/discord1.png" alt="">
+                Login
+            </a>
+            <div class="profile">
+                <img src="./src/img/log4.jpg" alt="">
+                <p>BlazerHeat</p>
+                <img src="./src/img/drop-down.png" id="drop-down-img" alt="">
+                <div class="dropdown v-none">
+                    <a href="#">My Servers</a>
+                    <a href="#" style="color: red;">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main-display">
+        <div class="wrap">
+            <img src="./src/img/logo.png" alt="">
+            <h1 data-content="Make A Professional Discord Server!">Make A Professional Discord Server!</h1>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn main-btn">
+                <img src="./src/img/discord1.png" alt="">
+                Add to Discord
+            </a>
+            <a href="#" class="btn main-btn" id="dashboard-btn">
+                <img src="./src/img/gear.png" alt="" id="gear">
+                Dashboard
+            </a>
+        </div>
+    </div>
+        <div class="cards">
+            <div class="card">
+                <img src="./src/img/about1.jpg" alt="">
+                <div class="text">
+                    <h2>Easily Create Custom Commands</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ratione facere dolor eum, consequatur blanditiis asperiores laboriosam ducimus, excepturi molestiae ipsum architecto iusto repellendus quos.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card reverse">
+                <img src="./src/img/about2.jpg" alt="">
+                <div class="text">
+                    <h2>Welcome Message and Auto-Role</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ratione facere dolor eum, consequatur blanditiis asperiores laboriosam ducimus, excepturi molestiae ipsum architecto iusto repellendus quos.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <img src="./src/img/about3.jpg" alt="">
+                <div class="text">
+                    <h2>Highly customizable moderation to protect your server from trolls and goblins.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ratione facere dolor eum, consequatur blanditiis asperiores laboriosam ducimus, excepturi molestiae ipsum architecto iusto repellendus quos.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section">
+            <div class="copyright">
+                <h2>Dignity Bot</h2>
+                <p style="color: grey;">Copyright © 2019 - 2020 Dignity Bot Inc</p>
+            </div>
+            <div class="links">
+                <a href="#" class="link active">Home</a>
+                <a href="#" class="link">Modules</a>
+                <a href="#" class="link">About</a>
+                <a href="#" class="link">Contact</a>
+                <a href="#" class="link">Back to Top</a>
+            </div>
+        </div>
+        <div class="section" style=" border-bottom: none; border-top: .5px solid grey;">
+            <div>
+                <h3>READY TO BUILD THE BEST DISCORD SERVER ?</h3>
+                <p style="color: grey;">Dignity Bot is the best Discord bot to bootstrap and grow your Discord server
+                </p>
+            </div>
+            <a href="#" class="btn main-btn">
+                <img src="./src/img/discord1.png" alt="">
+                Add to Discord
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const profile = document.querySelector('.profile');
+        const dropdownImage = document.getElementById('drop-down-img');
+        const dropdownMenu = document.querySelector('.dropdown');
+        profile.addEventListener('click', () => {
+            dropdownImage.classList.toggle('upside-down');
+            dropdownMenu.classList.toggle('v-none');
+        });
+
+        const burger = document.querySelector('.burger');
+        const navList = document.querySelector('.navbar ul');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('burger-active');
+            navList.classList.toggle('burger-active');
+        });
+    </script>
+</body>
+
+</html>
