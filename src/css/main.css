@@ -60,30 +60,9 @@ main {
     justify-content: center;
 }
 
-.main-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-weight: 700;
-
-    background: linear-gradient(90deg,#6850ff,#a750ff);
-    margin: 10px 15px;
-
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.main-btn:hover {
-    transform: scale(1.1);
-}
 
 #dashboard-btn {
     background: linear-gradient(90deg,#058cfb,#0026ff);
-}
-
-.main-btn img {
-    width: 45px;
-    margin-right: 10px;
 }
 
 #gear {
