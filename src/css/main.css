@@ -50,6 +50,7 @@ main {
 .wrap h1 {
     letter-spacing: 5px;
     margin-top: 50px;
+    cursor: default;
 }
 
 
@@ -93,6 +94,7 @@ main {
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
+    cursor: default;
 
     margin: 75px 0;
 }
