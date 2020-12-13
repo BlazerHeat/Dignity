@@ -105,6 +105,7 @@ main {
     filter:drop-shadow(2px 2px 2px black);
 }
 
+
 .text p{
     color: grey;
     max-width: 50%;
@@ -119,6 +120,10 @@ main {
         margin-top: 20px;
     }
 
+    .card p {
+        max-width: 100%;
+    }
+
     .cards hr {
         display: block;
         width: 100%;
@@ -128,7 +133,14 @@ main {
 }
 
 @media only screen and (max-width: 700px){
+
     .card img {
         width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card img {
+        width: 200px;
     }
 }
