@@ -12,8 +12,27 @@ main {
     color: white;
 }
 
-.container h2 {
+.title {
+    display: flex;
     cursor: default;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2{
+    margin: 0 17px;
+}
+
+.title img{
+    width: 40px;
+    animation: gear 2s linear 0s infinite;
+}
+@keyframes gear{
+    from{
+        transform: rotateZ(0deg);
+    } to {
+        transform: rotateZ(360deg);
+    }
 }
 
 .servers-list {
