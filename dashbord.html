@@ -118,6 +118,23 @@
         </div>
     </footer>
 
+    <script>
+        const profile = document.querySelector('.profile');
+        const dropdownImage = document.getElementById('drop-down-img');
+        const dropdownMenu = document.querySelector('.dropdown');
+        profile.addEventListener('click', () => {
+            dropdownImage.classList.toggle('upside-down');
+            dropdownMenu.classList.toggle('v-none');
+        });
+
+        const burger = document.querySelector('.burger');
+        const navList = document.querySelector('.navbar ul');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('burger-active');
+            navList.classList.toggle('burger-active');
+        });
+    </script>
+
 </body>
 
 </html>
