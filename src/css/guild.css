@@ -1,0 +1,98 @@
+main{
+    height: max(100vh, 900px);
+    margin-top: 7em;
+}
+
+.title {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.server {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.server img {
+    height: 50px;
+    border-radius: 50%;
+}
+.server p {
+    margin-left: 20px;
+    cursor: default;
+    color: rgb(255, 255, 255, 0.8);
+
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cards {
+    
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.card {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(62, 66, 70);
+    border-radius: 3px;
+
+    cursor: pointer;
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.text h3 {
+    color: white;
+}
+.text p {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.disabled {
+    opacity: 0.3;
+    transition: opacity .3s ease-out, transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.disabled:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1290px){
+    main {
+        height: max(100vh, 1100px) !important;
+    }
+    .cards {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 850px){
+    main {
+        height: max(100vh, 2700px) !important;
+    }
+    .cards {
+        grid-template-columns: auto;
+    }
+}

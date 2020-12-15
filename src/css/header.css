@@ -66,14 +66,14 @@ header::before{
     text-decoration: none;
     color: white;
     font-size: 23px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     margin-left: 17px;
     transition: color 0.175s ease-in-out;
 }
 
 .logo a:hover {
-    color: orange;
+    color: #f200ff;
 }
 
 .navbar ul {

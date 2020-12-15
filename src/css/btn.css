@@ -19,3 +19,16 @@
     width: 45px;
     margin-right: 10px;
 }
+
+.btn-success {
+    background-color: rgb(68, 179, 127) !important;
+}
+.btn-success:hover {
+    background-color: rgb(53, 136, 97) !important;
+}
+.btn-warning {
+    background-color: #ffc107 !important;
+}
+.btn-warning:hover {
+    background-color: #c39406 !important;
+}
