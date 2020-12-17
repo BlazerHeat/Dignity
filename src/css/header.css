@@ -240,7 +240,14 @@ header::before{
         display: none;
     }
     .navbar ul {
+        flex-direction: column;
+        background-color: black;
+        width: 100vw;
+        left: -5vw;
         top: -180px;
+        z-index: -11;
+        
+        transition: top .2s ease-in-out;
     }
 
     .logo {
@@ -254,16 +261,6 @@ header::before{
         justify-content: space-around;
         height: 20px;
         cursor: pointer;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        background-color: black;
-        width: 100vw;
-        left: -5vw;
-        z-index: -11;
-        
-        transition: top .2s ease-in-out;
     }
 
     .burger-active {
