@@ -255,9 +255,7 @@ header::before{
         height: 20px;
         cursor: pointer;
     }
-}
 
-@media only screen and (max-width: 1070px){
     .navbar ul {
         flex-direction: column;
         background-color: black;
@@ -271,6 +269,9 @@ header::before{
     .burger-active {
         top: 78px !important;
     }
+}
+
+@media only screen and (max-width: 1070px){
 
     .nav-list {
         padding: 20px;
