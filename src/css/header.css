@@ -250,6 +250,13 @@ header::before{
         transition: top .2s ease-in-out;
     }
 
+    .nav-list {
+        padding: 20px;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: rgb(19, 20, 22);
+    }
+
     .logo {
         position: absolute;
         left: 0;
@@ -266,18 +273,6 @@ header::before{
     .burger-active {
         top: 78px !important;
     }
-}
-
-@media only screen and (max-width: 1070px){
-
-    .nav-list {
-        padding: 20px;
-        margin: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-        background-color: rgb(19, 20, 22);
-    }
-
-
 }
 
 @media only screen and (max-width: 640px){
